@@ -1,0 +1,8 @@
+export(registerDoParallelSpark)
+importFrom(iterators, iter)
+importFrom(SparkR, lapply)
+importFrom(SparkR, parallelize)
+importFrom(SparkR, collect)
+importFrom(SparkR, repartition)
+importFrom(SparkR, sparkR.init)
+importFrom(foreach, setDoPar)
