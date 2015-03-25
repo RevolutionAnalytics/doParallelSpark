@@ -7,4 +7,4 @@ Author: Revolution Analytics <rhadoop@revolutionanalytics.com>
 Maintainer: Revolution Analytics <rhadoop@revolutionanalytics.com>
 Description: Allow to evaluate expression in parallel on a Spark cluster using foreach
 Imports: SparkR, iterators, foreach
-License: Apache 2.0
+License: Apache License (== 2.0)
