@@ -14,7 +14,15 @@ doParallelSpark =
       function(args) {
         eval(expr, args, envir)}))}
 
+sparkinfo =
+  function(data, item)
+    switch(
+      item,
+      workers = 2, # 2 to make caret go parallel, not because it's true TODO
+      names = "doParallelSpark",
+      version = packageDescription("doParallelSpark", fields = "Version"))
+
 registerDoParallelSpark =
   function(sc = sparkR.init()) {
-     setDoPar(doParallelSpark, list(sc = sc))}
+     setDoPar(doParallelSpark, list(sc = sc), sparkinfo)}
 
